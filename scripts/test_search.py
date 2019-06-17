@@ -15,15 +15,8 @@ class TestSearch:
         self.page.setting.click_search()
         self.page.search.input_search(keyword)
         self.page.search.click_back()
+		print('hello')
 
     @pytest.allure.severity(pytest.allure.severity_level.CRITICAL)
     def test_hello1(self):
-        assert 1
-
-    @pytest.allure.severity(pytest.allure.severity_level.TRIVIAL)
-    def test_hello2(self):
-        assert 0
-
-    @pytest.allure.severity(pytest.allure.severity_level.NORMAL)
-    def test_hello3(self):
         assert 1
